@@ -21,7 +21,7 @@ export class NewteamComp extends Component {
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <h2 class="form-label" style={{margin:'30px'}}> <PersonOutlineIcon fontSize="large" style={{fontSize:'50px'}}/>New Team</h2>
+              <h2 class="form-label" style={{marginRight:'30px'}}> <PersonOutlineIcon fontSize="large" style={{fontSize:'50px'}}/>New Team</h2>
             </div>
           </div>
         </div>

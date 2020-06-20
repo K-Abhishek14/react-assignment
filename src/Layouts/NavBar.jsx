@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import Avatar from '@material-ui/core/Avatar';
 import { Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core';

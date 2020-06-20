@@ -35,7 +35,7 @@ export default function MembersComp() {
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <h3 class="form-label">Members</h3>
+            <h3 class="form-label" style={{paddingLeft:'20px'}}>Members</h3>
           </div>
         </div>
         <div class="col-md-6">
