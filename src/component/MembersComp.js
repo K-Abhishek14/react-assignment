@@ -65,7 +65,7 @@ export default function MembersComp() {
                 <TableCell align='left'>{row.name}</TableCell>
                 <TableCell align='left'>{row.desig}</TableCell>
                 <TableCell align="right">{row.country}</TableCell>
-                <TableCell align="right">{row.admin}</TableCell>
+                <TableCell align="right"><i class="fa fa-user" style={{ fontSize: '20px', color: 'blue' }}></i>{row.admin}</TableCell>
                 <TableCell align="right"><i class="fa fa-minus-circle" style={{ fontSize: '20px', color: 'red' }}></i>{row.remove}</TableCell>
               </TableRow>
             ))}
