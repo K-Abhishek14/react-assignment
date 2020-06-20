@@ -37,7 +37,7 @@ export class NavBar extends Component {
                 <Typography> <ComputerIcon />Websites</Typography>
                 <Typography> <EditIcon />Templates</Typography>
                 <Typography> <HelpOutlineIcon />Help</Typography>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg"   style={{marginLeft:'700px'}}/>
+                <Avatar alt="Sandra.T" src="/static/images/avatar/1.jpg"   style={{marginLeft:'700px'}}/>
                 <Typography>Sandra.T</Typography>
               </div>
 
