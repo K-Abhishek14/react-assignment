@@ -10,6 +10,7 @@ import ComputerIcon from '@material-ui/icons/Computer';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import SpeedIcon from '@material-ui/icons/Speed';
 import EditIcon from '@material-ui/icons/Edit';
+import userimg from '../Assets/imgs/Abhishek.jpg'
 
 const styles = theme => ({
   root: {
@@ -37,7 +38,7 @@ export class NavBar extends Component {
                 <Typography> <ComputerIcon />Websites</Typography>
                 <Typography> <EditIcon />Templates</Typography>
                 <Typography> <HelpOutlineIcon />Help</Typography>
-                <Avatar alt="Sandra.T" src="/static/images/avatar/1.jpg"   style={{marginLeft:'700px'}}/>
+                <Avatar alt="Sandra.T" src={userimg}   style={{marginLeft:'700px'}}/>
                 <Typography>Sandra.T</Typography>
               </div>
 

@@ -9,6 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { Avatar, Button } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
+import userimgs from '../Assets/imgs/Abhishek.jpg'
 
 const useStyles = makeStyles({
   table: {
@@ -60,7 +61,7 @@ export default function MembersComp() {
           <TableBody>
             {rows.map((row) => (
               <TableRow key={row.name}>
-                <TableCell align='left'><Avatar alt={row.name} src="/static/images/avatar/1.jpg" /></TableCell>
+                <TableCell align='left'><Avatar alt={row.name} src={userimgs} /></TableCell>
                 <TableCell align='left'>{row.name}</TableCell>
                 <TableCell align='left'>{row.desig}</TableCell>
                 <TableCell align="right">{row.country}</TableCell>
