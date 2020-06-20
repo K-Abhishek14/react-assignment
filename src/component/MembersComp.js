@@ -31,39 +31,50 @@ export default function MembersComp() {
 
   return (
     <>
-    <div style={{textAlign:'right',margin:'20px'}}>
-    <Button variant="contained"  style={{backgroundColor:'green',color:'white'}}><AddIcon/> Add</Button>
-    </div>
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-          <TableCell align='left'> </TableCell>
-            <TableCell align='left'> </TableCell>
-            <TableCell align='left'> </TableCell>
-            <TableCell align="right"> </TableCell>
-            <TableCell align="right"> </TableCell>
-            <TableCell align="right"> </TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-               <TableCell align='left'><Avatar alt={row.name} src="/static/images/avatar/1.jpg" /></TableCell>
-              <TableCell  align='left'>{row.name}</TableCell>
-              <TableCell  align='left'>{row.desig}</TableCell>
-              <TableCell align="right">{row.country}</TableCell>
-              <TableCell align="right">{row.admin}</TableCell>
-              <TableCell align="right">{row.remove}</TableCell>
+     <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <h3 class="form-label">Members</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group" style={{ textAlign: 'right',marginRight:'25px' }}>
+            <Button variant="contained" style={{ backgroundColor: 'green', color: 'white' }}><AddIcon /> Add</Button>
+            </div>
+          </div>
+          </div>
+     
+
+      <TableContainer component={Paper}>
+        <Table className={classes.table} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell align='left'> </TableCell>
+              <TableCell align='left'> </TableCell>
+              <TableCell align='left'> </TableCell>
+              <TableCell align="right"> </TableCell>
+              <TableCell align="right"> </TableCell>
+              <TableCell align="right"> </TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-    <div style={{textAlign:'right',margin:'20px'}}>
-    <Button variant="contained" color="primary">Save</Button>
-    </div>
-    
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <TableRow key={row.name}>
+                <TableCell align='left'><Avatar alt={row.name} src="/static/images/avatar/1.jpg" /></TableCell>
+                <TableCell align='left'>{row.name}</TableCell>
+                <TableCell align='left'>{row.desig}</TableCell>
+                <TableCell align="right">{row.country}</TableCell>
+                <TableCell align="right">{row.admin}</TableCell>
+                <TableCell align="right"><i class="fa fa-minus-circle"  style={{fontSize:'20px',color:'red'}}></i>{row.remove}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <div style={{ textAlign: 'right', margin: '20px' }}>
+        <Button variant="contained" color="primary">Save</Button>
+      </div>
+
     </>
   );
 }
