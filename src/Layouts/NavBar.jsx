@@ -18,6 +18,7 @@ const styles = theme => ({
       margin: theme.spacing(1),
     },
   },
+   
 });
 
 export class NavBar extends Component {
@@ -32,19 +33,21 @@ export class NavBar extends Component {
             overlay={<Tooltip className='myToolTip'></Tooltip>}>
             <Navbar.Brand className='titleContiner'>
               <div className={classes.root}>
-                <Typography > < SpeedIcon />Dashboard</Typography>
+                <Typography> < SpeedIcon />Dashboard</Typography>
                 <Typography> <ComputerIcon />Websites</Typography>
                 <Typography> <EditIcon />Templates</Typography>
                 <Typography> <HelpOutlineIcon />Help</Typography>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg"   style={{marginLeft:'700px'}}/>
                 <Typography>Sandra.T</Typography>
               </div>
+
+              
             </Navbar.Brand>
           </OverlayTrigger>
         </Container>
-      </Navbar>
+      </Navbar >
     )
   }
 }
 // export default NavBar
-export default NavBar = withStyles(styles, {withTheme: true})(NavBar);
+export default NavBar = withStyles(styles, { withTheme: true })(NavBar);
