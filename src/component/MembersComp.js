@@ -31,19 +31,19 @@ export default function MembersComp() {
 
   return (
     <>
-     <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <h3 class="form-label">Members</h3>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <h3 class="form-label">Members</h3>
           </div>
-          <div class="col-md-6">
-            <div class="form-group" style={{ textAlign: 'right',marginRight:'25px' }}>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group" style={{ textAlign: 'right', marginRight: '25px' }}>
             <Button variant="contained" style={{ backgroundColor: 'green', color: 'white' }}><AddIcon /> Add</Button>
-            </div>
           </div>
-          </div>
-     
+        </div>
+      </div>
+
 
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
@@ -65,7 +65,7 @@ export default function MembersComp() {
                 <TableCell align='left'>{row.desig}</TableCell>
                 <TableCell align="right">{row.country}</TableCell>
                 <TableCell align="right">{row.admin}</TableCell>
-                <TableCell align="right"><i class="fa fa-minus-circle"  style={{fontSize:'20px',color:'red'}}></i>{row.remove}</TableCell>
+                <TableCell align="right"><i class="fa fa-minus-circle" style={{ fontSize: '20px', color: 'red' }}></i>{row.remove}</TableCell>
               </TableRow>
             ))}
           </TableBody>
