@@ -1,16 +1,16 @@
 import React from 'react'
 import NavBar from '../Layouts/NavBar'
 import Footer from '../Layouts/Footer'
-import MidSectionContainer from '../component/MiddleSection/MidSectionContainer'
+import { MIdSectionContainer } from '../component/MIdSectionContainer'
 
 function Home() {
-    return (
-        <>
-        <NavBar />
-        <MidSectionContainer />
-        <Footer />
-        </>
-    )
+  return (
+    <>
+      <NavBar />
+      <MIdSectionContainer />
+      <Footer />
+    </>
+  )
 }
 
 export default Home
