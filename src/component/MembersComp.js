@@ -72,8 +72,9 @@ export default function MembersComp() {
           </TableBody>
         </Table>
       </TableContainer>
-      <div style={{ textAlign: 'right', margin: '20px' }}>
+      <div style={{ textAlign: 'right', margin: '20px', }}>
         <Button variant="contained" color="primary">Save</Button>
+        <div style={{height:'2rem'}}></div>
       </div>
 
     </>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
+import { Button } from '@material-ui/core';
 
 export class Footer extends Component {
   constructor(props) {
@@ -36,8 +37,10 @@ export class Footer extends Component {
             expand='lg'
             sticky='bottom'>
             <Container>
-              <Nav className='mr-auto justify-content-end navWidth'>
-                
+              <Nav className='mr-auto justify-content-start navWidth'>
+              <Button variant="outlined" style={{margin:'5px'}}>Menu</Button>
+              <Button variant="outlined" style={{margin:'5px'}}> <i class="fa fa-code" aria-hidden="true"></i>Handoff</Button>
+              <Button variant="outlined" style={{margin:'5px'}}> <i class="fa fa-comments" aria-hidden="true"></i> No Comments</Button>
               </Nav>
             </Container>
           </Navbar>
