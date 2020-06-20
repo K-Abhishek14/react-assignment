@@ -28,10 +28,7 @@ export class NavBar extends Component {
     return (
       <Navbar className='Navbar' variant='light' expand='lg' sticky='top'>
         <Container>
-          <OverlayTrigger
-            placement='bottom'
-            delay={{ show: 150, hide: 150 }}
-            overlay={<Tooltip className='myToolTip'></Tooltip>}>
+         
             <Navbar.Brand className='titleContiner'>
               <div className={classes.root}>
                 <Typography> < SpeedIcon />Dashboard</Typography>
@@ -41,14 +38,11 @@ export class NavBar extends Component {
                 <Avatar alt="Sandra.T" src={userimg}   style={{marginLeft:'700px'}}/>
                 <Typography>Sandra.T</Typography>
               </div>
-
-              
             </Navbar.Brand>
-          </OverlayTrigger>
         </Container>
       </Navbar >
     )
   }
 }
-// export default NavBar
+
 export default NavBar = withStyles(styles, { withTheme: true })(NavBar);
